@@ -1,0 +1,1 @@
+Aqui vou adicionando as atividades e exercícios das aulas de Python!
