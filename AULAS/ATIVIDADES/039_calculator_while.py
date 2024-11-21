@@ -39,6 +39,6 @@ while True:
     else:  # Verifies if the first number entered is an integer
         print('This is not a number')
     logout = input('\nDo you want to leave? [y]es or [n]o: ').lower().startswith('y')  # Verifies if the user wants to stop calculating
-    if logout is True: 
+    if logout is True:
         print('\nGoodbye!')
         break
