@@ -1,22 +1,25 @@
-phrase = 'Python is a programming language' \
-    'multiparadigm' \
-    'Python was created by Guido van Rossum.'
+phrase = 'aaaaoo'
 
-print(phrase.count('Python'))  # Conta quantas vezes aparece a palavra Python
-print(phrase.count('o'))
-
-print('')
+i = 0
 qt_shows_most = 0
 qt_letter_shows_most = ''
-i = 0
+
 while i < len(phrase):
     letter = phrase[i]
+
+    if letter == ' ':
+        i += 1
+        continue
+
     letter_shows = phrase.count(letter)
 
-    if letter_shows > qt_shows_most:
-        qt_shows_most = qt_letter_shows_most
+    if qt_shows_most < letter_shows:
+        qt_shows_most = letter_shows
         qt_letter_shows_most = letter
 
     i += 1
-
-    print(f'{letter}: {letter_shows}')
+    break
+print('The letter that shows the most was '
+    f'"{qt_letter_shows_most}" with {qt_shows_most}x shows')
+print('letter = ',qt_letter_shows_most)
+    
